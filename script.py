@@ -160,5 +160,5 @@ finalFile.sort()
 
 # write file
 print("writing file...")
-with open("hosts.txt", "w") as f:
+with open("blocklist.txt", "w") as f:
     f.writelines(finalFile)
