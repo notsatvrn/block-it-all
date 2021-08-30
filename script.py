@@ -90,11 +90,17 @@ os.system("wget -O hoshsadiq-nocoin.txt https://raw.githubusercontent.com/hoshsa
 # repo: https://github.com/EnergizedProtection/block
 os.system("wget -O energized-porn.txt https://block.energized.pro/porn/formats/domains.txt")
 
-# description: blocks, basically everything.
+# description: blocks trackers, ads, malware, etc.
 # license: https://github.com/StevenBlack/hosts/blob/master/license.txt
 # creator: https://github.com/StevenBlack
 # repo: https://github.com/StevenBlack/hosts
 os.system("wget -O stevenblack.txt https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn/hosts")
+
+# description: blocks trackers and ads.
+# license: none
+# creator: https://github.com/sjhgvr
+# website: https://oisd.nl
+os.system("wget -O oisd.txt https://dbl.oisd.nl/basic/")
 
 # create non cleaned-up list
 print("creating non cleaned list...")
