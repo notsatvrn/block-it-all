@@ -141,16 +141,16 @@ os.chdir("..")
 print("de-duplicating list again...")
 finalFile = list(dict.fromkeys(finalFile))
 
-# sort
-print("sorting list...")
-finalFile.sort()
-
 # remove localhost stuff
 print("removing localhost stuff...")
 finalFile.remove("localhost\n")
 finalFile.remove("localhost.localdomain\n")
 finalFile.remove("local\n")
 finalFile.remove("\n")
+
+# sort
+print("sorting list...")
+finalFile.sort()
 
 # write file
 print("writing file...")
