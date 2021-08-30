@@ -114,6 +114,18 @@ for count, file in enumerate(files):
 # go back to main directory
 os.chdir("..")
 
+# user whitelist/blocklist
+os.chdir("changes")
+print("adding/removing stuff based on files in the changes folder...")
+with open("add.txt", "r") as f:
+    addFileContent = f.readlines()
+with open("remove.txt", "r") as f:
+    removeFileContent = f.readlines()
+finalFile += addFileContent
+for count, line in enumerate(removeFileContent):
+    del finalFile[count]
+os.chdir("..")
+
 # de-duplicate
 print("de-duplicating list...")
 finalFile = list(dict.fromkeys(finalFile))
@@ -130,18 +142,6 @@ while True:
     finalFile[count] = finalFile[count].replace("0.0.0.0.", "0.0.0.69.").replace("0.0.0.0", "").replace("0.0.0.69.", "0.0.0.0.").replace("127.0.0.1", "").strip() + "\n"
     oldCount = count
     count += 1
-
-# user whitelist/blocklist
-os.chdir("changes")
-print("adding/removing stuff based on files in the changes folder...")
-with open("add.txt", "r") as f:
-    addFileContent = f.readlines()
-with open("remove.txt", "r") as f:
-    removeFileContent = f.readlines()
-finalFile += addFileContent
-for count, line in enumerate(removeFileContent):
-    del finalFile[count]
-os.chdir("..")
 
 # de-duplicate
 print("de-duplicating list again...")
@@ -162,3 +162,12 @@ finalFile.sort()
 print("writing file...")
 with open("blocklist.txt", "w") as f:
     f.writelines(finalFile)
+
+# clean up
+print("cleaning up...")
+os.chdir("lists")
+filesForDeletion = glob.glob("*.txt")
+for count, file in enumerate(filesForDeletion):
+    os.remove(file)
+os.chdir("..")
+print("done!")
