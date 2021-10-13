@@ -41,12 +41,10 @@ count = 0
 while count < len(finalList):
   if not isStrAlphaNum(finalList[count].replace(".").replace("-")) or not finalList[count].contains(".") or finalList[count].endsWith("."): finalList.del(count)
   else: count += 1
-sort(finalList)
-finalList = deduplicate(finalList, isSorted = true)
+finalList = deduplicate(sorted(finalList), isSorted = true)
 
 # write file
 echo "writing file..."
 let f = open("blocklist.txt", fmWrite)
-for line in finalList:
-  f.writeLine(line)
+for line in finalList: f.writeLine(line)
 echo "done!"
