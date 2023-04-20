@@ -1,11 +1,11 @@
 # DO NOT ADD OR REMOVE ANY ENTRIES FROM THIS FILE.
 
-# re-add google analytics domains (removed by anudeepND's optional whitelist)
+# allow google analytics domains (removed by anudeepND's optional whitelist)
 www.google-analytics.com
 google-analytics.com
 ssl.google-analytics.com
 
-# add bugsnag domains
+# allow bugsnag domains
 updates.bugsnag.com
 enterprise-updates.bugsnag.com
 on-prem-dashboard-testing.bugsnag.com
@@ -26,7 +26,7 @@ on-prem-craig-testing.bugsnag.com
 www-preview.bugsnag.com
 community.bugsnag.com
 
-# add sentry domains
+# allow sentry domains
 drive.a.sentry.io
 datadog.a.sentry.io
 cal.a.sentry.io
@@ -254,4 +254,3 @@ ingest-v6.testing.my.sentry.io
 ingest-v6.disney.my.sentry.io
 ur93pklmrzha.sentry.io
 www.community.sentry.io
-

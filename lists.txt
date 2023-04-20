@@ -1,7 +1,23 @@
+# Description: WaLLy3k's suspicious list
+# License: https://creativecommons.org/licenses/by-nc/4.0/
+# Creator: https://github.com/WaLLy3K
 https://v.firebog.net/hosts/static/w3kbl.txt
+
+# Description: RooneyMcNibNug's "SNAFU" suspicious list.
+# License: https://www.wtfpl.net/about/
+# Creator: https://github.com/RooneyMcNibNug
+# Repo: https://github.com/RooneyMcNibNug/pihole-stuff
 https://raw.githubusercontent.com/RooneyMcNibNug/pihole-stuff/master/SNAFU.txt
+
 https://blocklistproject.github.io/Lists/alt-version/malware-nl.txt
+
+# Description: Blocks ads.
+# License: https://github.com/anudeepND/blacklist/blob/master/LICENSE
+# Creator: https://github.com/anudeepND/
+# Repo: https://github.com/anudeepND/blacklist
 https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt
+
+
 https://blocklistproject.github.io/Lists/alt-version/abuse-nl.txt
 https://blocklistproject.github.io/Lists/alt-version/ads-nl.txt
 https://blocklistproject.github.io/Lists/alt-version/tracking-nl.txt
@@ -13,10 +29,77 @@ https://blocklistproject.github.io/Lists/alt-version/redirect-nl.txt
 https://blocklistproject.github.io/Lists/alt-version/gambling-nl.txt
 https://blocklistproject.github.io/Lists/alt-version/phishing-nl.txt
 https://blocklistproject.github.io/Lists/alt-version/fraud-nl.txt
+
+# Description: Blocks Windows trackers.
+# License: https://github.com/crazy-max/WindowsSpyBlocker/blob/master/LICENSE
+# Creator: https://github.com/crazy-max
+# Repo: https://github.com/crazy-max/WindowsSpyBlocker
 https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt
+
+# Description: Blocks Windows updates.
+# License: https://github.com/crazy-max/WindowsSpyBlocker/blob/master/LICENSE
+# Creator: https://github.com/crazy-max
+# Repo: https://github.com/crazy-max/WindowsSpyBlocker
 https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/update.txt
+
+# Description: Blocks web browser based coin mining.
+# License: https://github.com/hoshsadiq/adblock-nocoin-list/blob/master/LICENSE
+# Creator: https://github.com/hoshsadiq
+# Repo: https://github.com/hoshsadiq/adblock-nocoin-list/
 https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt
+
+# Description: Blocks trackers, ads, malware, etc.
+# License: https://github.com/StevenBlack/hosts/blob/master/license.txt
+# Creator: https://github.com/StevenBlack
+# Repo: https://github.com/StevenBlack/hosts
 https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn/hosts
-https://dbl.oisd.nl/basic/
+
+# Description: Blocks trackers and ads.
+# License: None (Public Domain)
+# Creator: https://github.com/sjhgvr
+# Website: https://oisd.nl
+https://small.oisd.nl/
+
+# Description: Blocks porn.
+# License: None (Public Domain)
+# Creator: https://github.com/sjhgvr
+# Website: https://oisd.nl
+https://nsfw.oisd.nl/
+
 https://blocklistproject.github.io/Lists/alt-version/vaping-nl.txt
+
+# Description: Blocks porn.
+# License: https://github.com/EnergizedProtection/block/blob/master/LICENSE
+# Creator: https://github.com/EnergizedProtection
+# Repo: https://github.com/EnergizedProtection/block
 https://block.energized.pro/porn/formats/domains.txt
+
+# Description: Blocks phishing domains.
+# License: https://creativecommons.org/licenses/by-nc/4.0/
+# Creator: https://twitter.com/AndreaDraghetti
+# Website: https://phishing.army/
+https://phishing.army/download/phishing_army_blocklist_extended.txt
+
+# description: blocks pop-up ads.
+# license: https://github.com/Yhonay/antipopads/blob/master/LICENSE
+# creator: https://github.com/Yhonay
+# repo: https://github.com/Yhonay/antipopads
+https://raw.githubusercontent.com/Yhonay/antipopads/master/hosts
+
+# description: blocks first-party trackers.
+# license: https://git.frogeye.fr/geoffrey/eulaurarien/src/branch/master/LICENSE
+# creator: https://geoffrey.frogeye.fr
+# repo: https://git.frogeye.fr/geoffrey/eulaurarien
+https://hostfiles.frogeye.fr/firstparty-trackers-hosts.txt
+
+# description: blocks multi-party trackers.
+# license: https://git.frogeye.fr/geoffrey/eulaurarien/src/branch/master/LICENSE
+# creator: https://geoffrey.frogeye.fr
+# repo: https://git.frogeye.fr/geoffrey/eulaurarien
+https://hostfiles.frogeye.fr/multiparty-trackers-hosts.txt
+
+# description: blocks android trackers.
+# license: https://github.com/Perflyst/PiHoleBlocklist/blob/master/LICENSE
+# creator: https://github.com/Perflyst
+# repo: https://github.com/Perflyst/PiHoleBlocklist/
+https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/android-tracking.txt
